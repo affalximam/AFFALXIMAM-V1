@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   <title> Aboutme </title>
+    <meta charset="utf-8">
+    <meta name="view port" content="Width=device-width, initial-scale=1">
+    <style>
+      *{
+    margin: 0;
+    }
+    body{
+      background-color: #181448;
+      width: 100%;
+    }
+    /* Header 1 */
+    
+    .header1{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    position: relative;
+    }
+    h1{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width:100%;
+    text-align: center;
+    font-family: times new roman;
+    }
+    
+    /* Navbar 1 */
+    
+    .header2{
+      width: 100%;
+      background-color: #18d1ff;
+      height:80px;
+    }
+    nav {
+     text-align: left;
+    } 
+    nav ul ul {
+     display: none;
+    }
+    nav ul li:hover > ul{
+    display: block;
+    text-align: center;
+    }
+    nav ul {
+     padding-top: 20px;
+     padding-bottom: 20px;
+     list-style: none;
+     position: relative;
+     display: inline-table;
+    }
+    nav ul:after {
+     content: ""; 
+     clear:both; 
+     display: block;
+    }
+    nav ul li{
+     float:left;
+    }
+    nav ul li:hover{
+    }
+    nav ul li:hover a{
+     color:#fff;
+     font-size:15px;
+    }
+    nav ul li a{
+     display: block;
+  
+     color: #fff;
+     text-decoration: none;
+    }
+    nav ul ul{
+     border-radius: 0px;
+     padding: 0;
+    }
+    nav ul ul li{
+     float:none;
+     border-top: 1px soild #53bd84;
+     border-bottom: 1px solid #53bd84;
+    }
+    nav ul ul li a{
+     padding: 10px 15px;
+     color: #fff;
+    }
+    nav ul ul li a:hover{
+    }
+    nav ul ul ul{
+     top: 0;
+    }
+    .rotate {
+      margin-top:10%;
+      animation-name: rotate ;
+      animation-duration: 5s;
+      animation-play-state: running;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      opacity: 1.0;filter: alpha(opacity=50);
+      }
+      
+      img:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+      }
+      
+      @keyframes rotate{
+      10% {transform:rotateY(36deg)}
+      20% {transform:rotateY(72deg)}
+      30% {transform:rotateY(108deg)}
+      40% {transform:rotateY(144deg)}
+      50% {transform:rotateY(180deg)}
+      60% {transform:rotateY(216deg)}
+      70% {transform:rotateY(252deg)}
+      80% {transform:rotateY(288deg)}
+      90% {transform:rotateY(324deg)}
+      100% {transform:rotateY(360deg)}
+      90% {transform:rotateY(324deg)}
+      80% {transform:rotateY(288deg)}
+      70% {transform:rotateY(252deg)}
+      60% {transform:rotateY(216deg)}
+      50% {transform:rotateY(180deg)}
+      40% {transform:rotateY(144deg)}
+      30% {transform:rotateY(108deg)}
+      20% {transform:rotateY(72deg)}
+      10% {transform:rotateY(36deg)}
+      }
+      h3, .text{
+        text-decoration: none;
+        font-size: 50px;
+        text-align: center;
+        border-radius:0px; 
+        border:0px; 
+        font-family:New rocker; 
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        text-shadow: 2px solid red; 
+        color: white; 
+        text-shadow: 2px 2px 2px red , 0 0 1px black; 
+        padding:20px solid red; 
+        animation:Spidercyberteam 0.5s linear infinite; } 
+        pre{ color:white; } 
+        @keyframes Spidercyberteam{ 
+        2%{color:black;} 
+        3%{transform:translate(2px,10px) skewX(320deg);} 
+        5%{transform:translate(0px,0px) skewX(0deg);} 
+        2%,54%{transform:translateX(0px) skew(0deg);} 
+        55%{transform:translate(2px,4px) skewX(320deg);} 
+        56%{transform:translate(0px,0px) skew(0deg);} 
+        57%{transform:translate(4px,5px) skew(0deg);} 
+        58%{transform:translate(0px,0px) skew(0deg);} 
+        62%{transform:translate(0px,8px) skewX(320deg);} 
+        63%{transform:translate(4px,2px) skew(0deg);} 
+        90%{transform:translate(1px,3px); skew(0deg);}
+        95%{transform:translate(7px,2px); skewX(320deg);}
+        100%{transform:translate(0px,0px) skewX(0deg);}
+        } 
+      }
+    /* Footer */
+    .footer{
+      background-color:#0000ff;
+      width:100%;
+      height:100%;
+      text-align:center;
+      font-family: Times New Roman;
+      color: White;
+      padding-bottom: 10px;
+    }
+    .jam{
+      background-color:#1F3A93;
+      width: 100%;
+      height: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 30px;
+      
+    }
+    #clock{
+      text-align: center;
+      font-family: Times New Roman;
+      color: #ffffff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .terminal{
+      width: 100%; 
+      height: 200px;
+      
+    }
+    
+    img[alt="www.000webhost.com"]{display:none;} 
+    </style>
+    </head>
+     <body>
+      <!--header paling atas-->
+        <div class="header1">
+          <h1>
+            <script>
+              farbbibliothek = new Array(); 
+              farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+              farbbibliothek[1] = new Array("#FF0000","#FFFFFF","#FF0000","#FF0000"); 
+              farbbibliothek[2] = new Array("#FFFFFF","#FF0000","#FFFFFF","#FF0000","#FFFFFF","#FF0000","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"); 
+              farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+              farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+              farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+              farbbibliothek[6] = new Array("#FFFFFF","#FF0000"); 
+              farbbibliothek[7] = new Array("#FF0000","#FFFF00","#00FF00","#00FFFF","#0000FF");
+              farbbibliothek[8] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+              farbbibliothek[9] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+              farben = farbbibliothek[4];
+              function farbschrift() 
+              { 
+              for(var i=0 ; i<Buchstabe.length; i++) 
+              { 
+              document.all["a"+i].style.color=farben[i]; 
+              } 
+              farbverlauf(); 
+              } 
+              function string2array(text) 
+              { 
+              Buchstabe = new Array(); 
+              while(farben.length<text.length) 
+              { 
+              farben = farben.concat(farben); 
+              } 
+              k=0; 
+              while(k<=text.length) 
+              { 
+              Buchstabe[k] = text.charAt(k); 
+              k++; 
+              } 
+              } 
+              function divserzeugen() 
+              { 
+              for(var i=0 ; i<Buchstabe.length; i++) 
+              { 
+              document.write("<font face='Forte' size='50'><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font>"); 
+              } 
+              farbschrift(); 
+              } 
+              var a=1; 
+              function farbverlauf() 
+              { 
+              for(var i=0 ; i<farben.length; i++) 
+              { 
+              farben[i-1]=farben[i]; 
+              } 
+              farben[farben.length-1]=farben[-1]; 
+
+              setTimeout("farbschrift()",30); 
+              } 
+              
+              var farbsatz=1; 
+              function farbtauscher() 
+              { 
+              farben = farbbibliothek[farbsatz]; 
+              while(farben.length<text.length) 
+              { 
+              farben = farben.concat(farben); 
+              } 
+              farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+              } 
+              setInterval("farbtauscher()",5000); 
+              text= " AFFALXIMAM "; //h 
+              string2array(text); 
+              divserzeugen();
+            </script>
+          </h1>
+        </div>
+      
+      <!--Header 2 -->
+        <div class="header2">
+          
+      <!-- navigasi -->
+          <nav>
+          <ul>
+            <li>
+            <li><img src="https://c.top4top.io/p_1700lti4v0.png" style="width:30%; height:30%; padding-left:10px;">
+              <ul>
+                <li><a href="https://affalximam.000webhostapp.com/index.html" style="background-color:black; font-size: 30px;"> Home </a></li>
+                <li><a href="https://affalximam.000webhostapp.com/blog.html" style="background-color:black;  font-size: 30px;"> Blog </a></li>
+                <li><a href="https://affalximam.000webhostapp.com/toolsonline.html" style="background-color:black;  font-size: 30px;"> Tools online </a></li>
+                <li><a href="https://affalximam.000webhostapp.com/ebook.html" style="background-color:black; font-size: 30px;">E-Book</a></li>
+                <li><a href="#" style="background-color:black; font-size: 30px;">Lain lain</a>
+                  <ul>
+                    <li><a href="https://affalximam.000webhostapp.comaboutme.html" style="background-color:black; font-size: 30px;"> Tentang saya </a></li>
+                    <li><a href="https://affalximam.000webhostapp.comcontackme.html" style="background-color:black; font-size: 30px;"> Kontak </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </nav>
+        </div>
+        
+           <br><h1><span style="color:#ffffff;font-family:Iceland;text-shadow:#ff0099 0px 0px 10px">[+] ABOUT ME [+]</span></h1>
+        <div class="rotate">
+          <img src="https://l.top4top.io/p_1711ajed41.png" style="width: 60%; height: 60%; margin-left:20%; margin-right: 20%;">
+        </div>
+        <h3> AFFALXIMAM</h3>
+        <br>
+          <script type="text/javascript">/*<![CDATA[*/
+ 
+TypingText = function(element, interval, cursor, finishedCallback) {
+ 
+if((typeof document.getElementById == 
+
+"undefined") || (typeof element.innerHTML == "undefined")) {
+ 
+this.running = true;
+ 
+return;
+ 
+}
+ 
+this.element = element;
+ 
+this.finishedCallback = (finishedCallback 
+
+? finishedCallback : function() { return; });
+ 
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+ 
+this.origText = this.element.innerHTML;
+ 
+this.unparsedOrigText = this.origText;
+ 
+this.cursor = (cursor ? cursor : "");
+ 
+this.currentText = "";
+ 
+this.currentChar = 0;
+ 
+this.element.typingText = this;
+ 
+if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+ 
+TypingText.all.push(this);
+ 
+this.running = false;
+ 
+this.inTag = false;
+ 
+this.tagBuffer = "";
+ 
+this.inHTMLEntity = false;
+ 
+this.HTMLEntityBuffer = "";
+ 
+}
+ 
+TypingText.all = new Array();
+ 
+TypingText.currentIndex = 0;
+ 
+TypingText.runAll 
+
+= function() {
+ 
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+ 
+}
+ 
+TypingText.prototype.run = function() {
+ 
+if(this.running) return;
+ 
+if(typeof this.origText == "undefined") {
+ 
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+ 
+return;
+ 
+}
+ 
+if(this.currentText == "") this.element.innerHTML = "";
+ 
+if(this.currentChar < this.origText.length) {
+ 
+if(this.origText.charAt(this.currentChar) == "<" && 
+
+!this.inTag) {
+ 
+this.tagBuffer = "<";
+ 
+this.inTag = true;
+ 
+this.currentChar++;
+ 
+this.run();
+ 
+return;
+ 
+} else if(this.origText.charAt(this.currentChar) == ">" && 
+
+this.inTag) {
+ 
+this.tagBuffer += ">";
+ 
+this.inTag = false;
+ 
+this.currentText += this.tagBuffer;
+ 
+this.currentChar++;
+ 
+this.run();
+ 
+return;
+ 
+} else 
+
+if(this.inTag) {
+ 
+this.tagBuffer += this.origText.charAt(this.currentChar);
+ 
+this.currentChar++;
+ 
+this.run();
+ 
+return;
+ 
+} else 
+
+if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+ 
+this.HTMLEntityBuffer = "&";
+ 
+this.inHTMLEntity = true;
+ 
+this.currentChar++;
+ 
+this.run();
+ 
+return;
+ 
+} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+ 
+this.HTMLEntityBuffer += ";";
+ 
+this.inHTMLEntity = 
+
+false;
+ 
+this.currentText += this.HTMLEntityBuffer;
+ 
+this.currentChar++;
+ 
+this.run();
+ 
+return;
+ 
+} else if(this.inHTMLEntity) {
+ 
+this.HTMLEntityBuffer += 
+
+this.origText.charAt(this.currentChar);
+ 
+this.currentChar++;
+ 
+this.run();
+ 
+return;
+ 
+} else {
+ 
+this.currentText += this.origText.charAt(this.currentChar);
+ 
+}
+ 
+this.element.innerHTML = this.currentText;
+ 
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? 
+
+this.cursor(this.currentText) : this.cursor) : "");
+ 
+this.currentChar++;
+ 
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", 
+
+this.interval);
+ 
+} else {
+ 
+this.currentText = "";
+ 
+this.currentChar = 0;
+ 
+this.running = false;
+ 
+this.finishedCallback();
+ 
+}
+ 
+}
+ 
+ 
+            /*]]>*/</script>
+            <center>
+            <span style="color: #00ccff; font-size: 50px">
+            <p id="message"><b color> I Just A Country Person </b>
+            <span style="color: #f9ff00;" size="40px">
+            <br><b size="40px"> But I Am Happy </b>
+            </center>
+            <script type="text/javascript">/*<![CDATA[*/
+             
+            new TypingText(document.getElementById("message"), 90, function(i){ var ar = new Array("_", " ", "_", " "); return " " + 
+            
+            ar[i.length % ar.length]; });
+             
+             
+            //Type out examples:
+             
+            TypingText.runAll();
+             
+            /*]]>*/</script>
+
+          <br>
+          
+    <body onLoad="type_text()" ; bgColor=#000000 text=#FF0000>
+		<div class="terminal" align="center">
+		<script>
+		<!--
+		var tl=new Array(
+		"Loading.........................",
+		"///....####....Done....####....///",
+		"Kalau apa apa itu baca di website",
+		"resminya aja",
+		"Ntar dijawab sama orang yang pura-pura",
+		"tau jadi repot",
+		"Biasanya jawab nya gini: ",
+		"Setau saya bla bla bla itu gitugitugitu",
+		"Ada kayak setau saya nya atau kayanya",
+		"wkwkwkwkwkwk",
+		
+		);
+		var speed=100;
+		var index=0; text_pos=0;
+		var str_length=tl[0].length;
+		var contents, row;
+		
+		function type_text()
+		{
+		contents='';
+		row=Math.max(0,index-20);
+		while(row<index)
+		contents += tl[row++] + '\r\n';
+		document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "_";
+		if(text_pos++==str_length)
+		{
+		text_pos=0;
+		index++;
+		if(index!=tl.length)
+		{
+		str_length=tl[index].length;
+		setTimeout("type_text()",1500);
+		}
+		} else
+		setTimeout("type_text()",speed);
+		}
+		//-->
+		</script>
+		<p align="center">
+		<form><textarea style="background-color:#000000;color:#00ff00;" name="about" readonly="readonly" rows="10" cols="60" wrap="soft"></textarea></form></p>
+          <div>
+            <br>
+          <font face="times new roman" style="color:#ffffff; text-align:left; width: 100%;" margin-left="10px" padding-left="10px" size="15px">
+            <p> Saya adalah anak Desa. Saya baru mengenal Internet saat kelas 6 SD, Saat itu saya menggunakan HP merek Samsung Galaxy young 2, Saya membeli HP itu dari Uang sunat.</p>
+            <br>
+            <p> Saya hanya memiliki kuota internet di awal awal, tapi setelah itu saya gak ada kuota. Kok jadi curhat.</p>
+            <br>
+            <p> Saya masuk SMP tahun 2016 dan lulus tahun 2019. Kemudian Saya mendaftarkan Diri di SMK negeri 1 Wanayasa. Disana saya mendapat pelajaran Pemrograman Dasar. Disana saya mendapat materi Tentang HTML , JAVA , PYTHON dll. Namun saat itu saya belum memiliki sarana yang cukup. </p>
+            <br>
+            <p> Awal mei 2020 Saya Dikasih HP merek Samsung A10S dengan Internal 32 Gb. Sejak itu saya mulai install aplikasi notepad. Saya Mulai Belajar buat web pada Bulan Mei 2020. Saat itu saya belajar buat HTML di Halaman Masjid saat malam hari, kenapa di halaman Masjid dan Di malam hari ? </p>
+            <br>
+            <p> Ini saya Jelaskan. Saat itu saya dan teman-teman sedang acara rutin yaitu Main Drum Band Jam 3 pagi kita sebut itu aja ya, biar Keren. Wkwkwkwk. </p>
+            <br>
+            <p> Saat itu ketika temen-temen saya sedang mabar ( Main bareng ) Game online yang sedang populer. Nah niatnya saya ingin bermain, Tapi ibu saya gak kasih ijin saya main. Paham sendiri kan gimana Rasanya.</p>
+            <br>
+            <p> Nah daripada saya bosen, Mending saya latihan bikin website aja dulu. Saat itu saya bikin website di Wordpress. Namanya juga pilih yang gratisan. </p>
+            <br>
+            <p> Sekian cerita tadi barang kali menginspirasi kalian. </p>
+          </font>
+          </div>
+        
+
+        
+      <br><br>
+        
+        <br>
+      <!-- Jam -->
+          <div id="clock" class="jam"><p>
+            <script type="text/javascript" >
+             <!--
+              function showTime() {
+              var a_p = "";
+              var today = new Date();
+              var curr_hour = today.getHours();
+              var curr_minute = today.getMinutes();
+              var curr_second = today.getSeconds();
+            if (curr_hour < 12) {
+              a_p = "AM";
+            } 
+            else {
+              a_p = "PM";
+            }
+            if (curr_hour == 0) {
+              curr_hour = 12;
+            }
+            if (curr_hour > 12) {
+              curr_hour = curr_hour - 12;
+            }
+              curr_hour = checkTime(curr_hour);
+              curr_minute = checkTime(curr_minute);
+              curr_second = checkTime(curr_second);
+              document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+            }
+              function checkTime(i) {
+            if (i < 10) {
+              i = "0" + i;
+            }
+            return i;
+            }
+              setInterval(showTime, 500);
+            //-->
+            </script></p>
+          </div>
+</body>
+</html>
